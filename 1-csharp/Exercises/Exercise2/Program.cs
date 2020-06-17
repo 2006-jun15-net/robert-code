@@ -8,15 +8,15 @@ namespace Exercise2
         {
             Console.WriteLine("Enter a size for the staircase: ");
 
-            string UserInput = Console.ReadLine();
+            string userInput = Console.ReadLine();
 
-            int StaircaseSize = int.Parse(UserInput);
+            int staircaseSize = int.Parse(userInput);
 
-            for (int i = 1; i <= StaircaseSize; i++)
+            for (int i = 1; i <= staircaseSize; i++)
             {
-                string Padding = new string (' ', StaircaseSize-i);
-                string PoundSign = new string ('#', i);
-                Console.WriteLine(Padding + PoundSign);
+                string padding = new string(' ', staircaseSize-i);
+                string poundSign = new string('#', i);
+                Console.WriteLine(padding + poundSign);
             }
         }
     }
